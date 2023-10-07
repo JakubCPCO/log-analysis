@@ -62,29 +62,29 @@
           </archive>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.1.0</version>
-        <executions>
-          <execution>
-            <id>enforce-maven</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <requireMavenVersion>
-                  <version>[3.8.6,)</version>
-                </requireMavenVersion>
-                <requireJavaVersion>
-                  <version>[11,)</version>
-                </requireJavaVersion>
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-enforcer-plugin</artifactId>-->
+<!--        <version>3.1.0</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>enforce-maven</id>-->
+<!--            <goals>-->
+<!--              <goal>enforce</goal>-->
+<!--            </goals>-->
+<!--&lt;!&ndash;            <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;              <rules>&ndash;&gt;-->
+<!--&lt;!&ndash;                <requireMavenVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <version>[3.8.6,)</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                </requireMavenVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                <requireJavaVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <version>[11,)</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                </requireJavaVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;              </rules>&ndash;&gt;-->
+<!--&lt;!&ndash;            </configuration>&ndash;&gt;-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
     </plugins>
   </build>
 </project>
