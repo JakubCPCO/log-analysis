@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
 package com.capco.hackathon2023;
 
 import com.azure.ai.openai.OpenAIClient;
@@ -71,7 +68,7 @@ class CognitiveSearch {
         LOGGER.info("Welcome to Log Analysing with ChatGPT. Please enter your requests or type '-exit' to end.\n");
 
         while (true) {
-            LOGGER.info("Please provide input for ChatGPT...\n");
+            LOGGER.info("Please provide input for ChatGPT...");
             question = userInput.nextLine();
             if (question.equals(endConversation)) {
                 LOGGER.info("Ending communication with ChatGPT.");
@@ -85,9 +82,8 @@ class CognitiveSearch {
 
             for (ChatChoice choice : chatCompletions.getChoices()) {
                 ChatMessage message = choice.getMessage();
-                System.out.printf("Index: %d, Chat Role: %s.%n", choice.getIndex(), message.getRole());
-                System.out.println("Message:");
-                System.out.println(message.getContent());
+                LOGGER.info("Reply from ChatGPT:");
+                System.out.println(message.getContent() + "\n");
             }
 
             chatMessages.clear();
